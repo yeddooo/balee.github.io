@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+.allroom{
+  height: 100%;
+  width: 100%;
+}
+#sel{
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+}
+
+#sel option {
+  width: 700px; 
+  height: 60px; 
+  font-size: 20px;
+}
+.texttobuy{
+  position: absolute;
+  padding-top: 6%;
+  margin-left: -40px;
+}
+.turck{
+  display: flex;
+  background-color: #cae8ca;
+  width: 100%;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  border-radius: 20px;
+  margin-left: 150px;
+  z-index: 1;
+}
+.date{
+  padding-left: 20px;
+}
+.item{
+  padding-left: 20px;
+}
+body, input {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.2rem;
+  display: block;
+ 
+}
+.person-room{
+  display: flex;
+}
+.all{
+  padding-left: 20px;
+  
+}
+.item2{
+  padding-left: 0px;
+  background-color: #fff;
+  width: 100px;
+  height: 50px;
+  border: solid #000 1px;
+  text-align: center;
+  
+}
+button{
+  height: 20px;
+  width: 30px;
+}
+.little{
+  margin-top: 10px;
+}
+.promobt{
+  width: 70px;
+  height: 50px;
+  margin-top: 25px;
+}
+.bookbt{
+  width: 70px;
+  height: 50px;
+  background-color: #73a573;
+  border-color: #73a573;
+  margin-top: 25px;
+  color: #fff;
+  margin-left: 50px;
+  font-size: large;
+}
+.bookbt:hover{
+  color: #000;
+}
+.areabox{
+  background-image: url(https://wihok.sgp1.digitaloceanspaces.com/uploads/photos/2021/01/sngine_195a447e4dc17ace19d4a9f3279dbba4.jpg);
+  background-repeat: no-repeat;
+  padding-bottom: 30%;
+  
+}
+.fuck{
+  padding: 2px;
+}
+@media (max-width:952px) {
+  .areabox{
+  background-color: rgb(189, 189, 189);
+  padding-bottom: 240%;
+  height: 40%;
+  
+ 
+
+  }
+  .texttobuy{
+    margin-top: -1000px;
+    margin-left: 20%;
+    
+    
+  }
+  .turck{
+      display: block;
+      width: 100%;
+      margin-left: 200px;
+      
+      
+  }
+  .bookbt{
+      margin-left: 0;
+  }
+}
+.allcard{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: -270px;
+  padding-right: 20px;
+}
+.card {
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ transition: 0.3s;
+ width: 420px;
+ height: 600px;
+ margin-left: 300px;
+
+}
+
+.card:hover {
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container2{
+ text-align: center;
+}
+.pic{
+ width: 100%;
+ height: 50%;
+}
+
+.logo{
+width: 100px;
+height: 70px;
+}
+.logohotel{
+color: white;
+}
+.responsive {
+width: 100%;
+height: 20%;
+}
+.topic{
+  text-align: center;
+  margin-top: 50px;
+}
+.end{
+  background: #73a573;
+  margin-top: 50px;
+  height: 300px;
+  width: 100%;
+  bottom: 0;
+  color: white;
+
+}
+.coverall{
+  float: right;
+  padding-right: 30px;
+  padding-top: 50px;
+}
+.hotelbt{
+  width: 70px;
+  height: 50px;
+  background-color: #73a573;
+  border-color: #73a573;
+  color: #111;
+  float: right;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+@media (max-width:952px) {
+.allcard{
+    display: block;
+    padding-bottom: 60px;
+   }
+.card {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left: 310px;
+    width: 56%;
+    height: 200px;
+    padding-right: 220px;
+}  
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
+ .container2{
+  padding: 20px;
+     color: #000;
+     margin-left: 7px;
+     font-size: 17px;
+    white-space: nowrap;
+    text-align: left;
+ }
+ .coverall{
+  float: right;
+  padding-right: 30px;
+  padding-top: 50px;
+}
+ .pic{
+  width: 100%;
+  height: 30vh;
+ }
+ .fuck{
+  padding: 30px;
+ }
+ .hotelbtcontainer{
+  margin-top: 120%;
+  margin-left: -70px;
+ }
+ .hotelbt{
+   height: 30px;
+ }
+  p1{
+    display: block;
+  }
+  .allacti{
+   flex-wrap: wrap;
+  }
+  .topicac{
+    text-align: center;
+  }
+  footer{
+   margin-top: 100%;
+  }
+  .location{
+    margin-top: 300%;
+   text-align: center;
+  }
+  .datalocation{
+    flex-wrap: wrap;
+     margin-left: 80px;
+  }
+  .lo{
+   margin-left: -100px;
+  }
+  iframe{
+   width: 60%;
+  }
+  .ct{
+    padding-left: 20px;
+  }.logo2{
+    display: none;
+  }
+}
+@media (max-width:952px){
+  .detailpic{
+     margin-left: -125px;
+     width: 140%;
+  }
+}
+.allacti{
+  display: flex;
+}
+.miniac{
+  padding: 100px;
+  text-align: center;
+}
+.datalocation{
+  display: flex;
+}
+iframe{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  margin-left: 120px;
+  margin-top: 50px;
+}
+.last{
+  border: solid 1px #fff;
+  height: 1px;
+}
+.ct{
+  padding-left: 20px;
+}
+a{
+  text-decoration: none;
+  color: #111;
+}
+.detail{
+ margin-left: 35%;
+ padding-top: 10%;
+
+}
+
+

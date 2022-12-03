@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive nav</title>
+    <link rel="stylesheet" href="repon_sticky_nav.css">
+    <link rel="stylesheet" href="testja.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Guarani</label>
+        <ul>
+            <li><a  class="active" href="#">home</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">destination</a></li>
+            <li><a href="#">hotel</a></li>
+        </ul>
+    </nav> 
+    <div class="areabox">
+
+    </div>
+
+    <div class="texttobuy">
+        <br>
+     <div class="container">
+      <!-- date -->
+      <div class="date">
+        <p>date check-in</p>
+         <input id="todaycheckin" type="date">
+         <br>
+     </div>
+     <div class="date">
+        <p>date check-out</p>
+      <input id="today" type="date">
+      <br>
+     </div>
+       
+      <!-- date -->
+    
+      <!-- room -->
+      <div class="item">
+        <p>room type</p>
+        <select id="sel">
+          <option>ห้องพักเดี่ยว</option>
+          <option>ห้องพักรวม</option>
+          <option>ห้องพักเดี่ยว</option>
+         </select>
+      </div>
+      <!-- room -->
+    
+      <!-- option -->
+      <div class="item">
+        <p>option special</p>
+        <select id="sel">
+          <option>ไม่มี</option>
+          <option>มีสัตว์เลี้ยง</option>
+          <option>รับประทานอาหารเช้า</option>
+         </select>
+      </div>
+      <!-- option -->
+    
+      <!-- person -->
+      <div class="person-room">
+    
+        <div class="all">
+            <p>adult</p>
+            <div class="item2">
+                <div class="little">
+                <button id="de" onclick="totalclick(1)">+</button>
+               <span id="totalclick">0</span>
+                <button id="in" onclick="totalclick(-1)">-</button>
+             </div> 
+            </div>
+        </div>
+        <div class="all">
+            <p>children</p>
+             <div class="item2">
+                <div class="little">
+                <button id="de2" onclick="totalclick2(1)">+</button>
+               <span id="totalclick2">0</span>
+                <button id="in2" onclick="totalclick2(-1)">-</button>
+               </div>
+              </div>
+          </div>
+          <div class="all">
+            <p>room</p>
+          <div class="item2">
+            <div class="little">
+            <button id="de3" onclick="totalclick3(1)">+</button>
+           <span id="totalclick3">0</span>
+            <button id="in3" onclick="totalclick3(-1)">-</button>
+          </div>
+          </div>
+         </div>         
+        </div> 
+        <div class="all">
+             <div class="promo">
+                <button class="promobt">promo</button>
+             </div>
+        </div>
+        <div class="all">
+              <div class="book">
+                <button class="bookbt">BOOK NOW</button>
+              </div>
+        </div>
+     <!-- person -->
+     </div>
+    </div>
+      </div>
+       <!-- text to buy -->
+       <!-- person -->
+ </div>
+</div>
+  </div>
+   <!-- text to buy -->
+
+   <!-- room type -->
+     <div class="allcard">
+        <div class="card">
+            <img class= "pic" src="https://setupmyhotel.com/images/Room-Type-King-Room.jpg" alt="Avatar" >
+            <div class="container2">
+             <h3>single room</h3>
+             <br>
+             <p>ราคา : 2500</p>
+             <p>เหมาะสำหรับคนมีคู่ ว้ายพวกไม่มีเเฟน</p>
+            </div>
+          </div> -->
+          <div class="card">
+            <img class= "pic" src="https://setupmyhotel.com/images/Room-Type-King-Room.jpg" alt="Avatar" >
+            <div class="container2">
+             <h3>twin room</h3>
+             <br>
+             <p>ราคา : 2500</p>
+             <p>เหมาะสำหรับคนมีคู่ ว้ายพวกไม่มีเเฟน</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class= "pic" src="https://setupmyhotel.com/images/Room-Type-King-Room.jpg" alt="Avatar" >
+            <div class="container2">
+             <h3>just room</h3>
+             <br>
+             <p>ราคา : 2500</p>
+             <p>เหมาะสำหรับคนมีคู่ ว้ายพวกไม่มีเเฟน</p>
+            </div>
+          </div>
+     </div>
+     -->
+    <!-- room type -->
+  <script>
+    // // datecheckin-out javascript
+    let todaycheckin = new Date().toISOString().substr(0, 10);
+    document.querySelector("#todaycheckin").value = todaycheckin;
+    document.querySelector("#todaycheckin2").valueAsDate = new Date();
+
+
+    let today = new Date().toISOString().substr(0, 10);
+    document.querySelector("#today").value = today;
+    document.querySelector("#today2").valueAsDate = new Date();
+    // // datecheckin-out javascript
+
+
+    // item javascript adult
+    function totalclick(click){
+        const totalclick = document.getElementById("totalclick");
+        const sumvalue = parseInt(totalclick.innerText)+click;
+        // console.log(sumvalue+click);
+        totalclick.innerText =sumvalue;
+
+        if(sumvalue<0){
+            totalclick.innerText=0;
+        }
+    }
+    // item javascript adult
+    // item javascript children
+    function totalclick2(click){
+        const totalclick2 = document.getElementById("totalclick2");
+        const sumvalue2 = parseInt(totalclick2.innerText)+click;
+        // console.log(sumvalue+click);
+        totalclick2.innerText =sumvalue2;
+
+        if(sumvalue2<0){
+            totalclick2.innerText=0;
+        }
+    }
+    function totalclick3(click){
+        const totalclick3 = document.getElementById("totalclick3");
+        const sumvalue3 = parseInt(totalclick3.innerText)+click;
+        // console.log(sumvalue+click);
+        totalclick3.innerText =sumvalue3;
+
+        if(sumvalue3<0){
+            totalclick3.innerText=0;
+        }
+    }
+     // item javascript children
+  </script>
+   
+</body>
+</html>
